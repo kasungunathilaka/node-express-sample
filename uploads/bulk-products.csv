@@ -1,0 +1,3 @@
+id,name,slug,sku,createdDate,modifiedDate,brandId
+6,Socks,sok1,su006,NULL,NULL,3
+7,Swimwear,swm1,su007,NULL,NULL,2

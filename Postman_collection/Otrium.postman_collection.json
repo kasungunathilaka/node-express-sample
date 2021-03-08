@@ -1,0 +1,560 @@
+{
+	"info": {
+		"_postman_id": "678ba728-d0e8-463d-86b9-9b28f7e10642",
+		"name": "Otrium",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/product",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Jumpsuits\",\r\n    \"slug\": \"jmp1\",\r\n    \"sku\": \"su004\",\r\n    \"brand\": {\r\n        \"id\": 1,\r\n        \"name\": \"Nike\",\r\n        \"logoUrl\": null\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product"
+					]
+				},
+				"description": "Return all products"
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/product",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1006"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3ee-fAGYMthNa3H8HUcvO/vqvk/tqf4\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Mar 2021 17:51:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Shoes\",\n        \"slug\": \"sho1\",\n        \"sku\": \"su001\",\n        \"createdDate\": null,\n        \"modifiedDate\": \"2021-03-08T17:41:09.230Z\",\n        \"brand\": {\n            \"id\": 1,\n            \"name\": \"Nike\",\n            \"logoUrl\": null,\n            \"createdDate\": \"2021-03-08T17:29:42.890Z\",\n            \"modifiedDate\": \"2021-03-08T17:29:42.890Z\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Shirts\",\n        \"slug\": \"shi1\",\n        \"sku\": \"su002\",\n        \"createdDate\": null,\n        \"modifiedDate\": \"2021-03-08T17:41:09.236Z\",\n        \"brand\": {\n            \"id\": 2,\n            \"name\": \"Adidas\",\n            \"logoUrl\": null,\n            \"createdDate\": \"2021-03-08T17:29:42.890Z\",\n            \"modifiedDate\": \"2021-03-08T17:29:42.890Z\"\n        }\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Jeans\",\n        \"slug\": \"jea1\",\n        \"sku\": \"su003\",\n        \"createdDate\": null,\n        \"modifiedDate\": \"2021-03-08T17:41:09.236Z\",\n        \"brand\": {\n            \"id\": 3,\n            \"name\": \"Under Armour\",\n            \"logoUrl\": null,\n            \"createdDate\": \"2021-03-08T17:29:42.890Z\",\n            \"modifiedDate\": \"2021-03-08T17:29:42.890Z\"\n        }\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Jumpsuits\",\n        \"slug\": \"jmp1\",\n        \"sku\": \"su004\",\n        \"createdDate\": \"2021-03-08T17:46:49.594Z\",\n        \"modifiedDate\": \"2021-03-08T17:46:49.594Z\",\n        \"brand\": {\n            \"id\": 1,\n            \"name\": \"Nike\",\n            \"logoUrl\": null,\n            \"createdDate\": \"2021-03-08T17:29:42.890Z\",\n            \"modifiedDate\": \"2021-03-08T17:29:42.890Z\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/product/1",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/product/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"1"
+					]
+				},
+				"description": "Return a single product by id"
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/product/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/product/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "241"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f1-Z1Es8lYBdCN1e/6yR2gXUgfBBsI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Mar 2021 17:51:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Shoes\",\n    \"slug\": \"sho1\",\n    \"sku\": \"su001\",\n    \"createdDate\": null,\n    \"modifiedDate\": \"2021-03-08T17:41:09.230Z\",\n    \"brand\": {\n        \"id\": 1,\n        \"name\": \"Nike\",\n        \"logoUrl\": null,\n        \"createdDate\": \"2021-03-08T17:29:42.890Z\",\n        \"modifiedDate\": \"2021-03-08T17:29:42.890Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"Lingerie\",\r\n\t\"slug\": \"lin1\",\r\n\t\"sku\": \"su005\",\r\n\t\"brand\": {\r\n\t\t\"id\": 2\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product"
+					]
+				},
+				"description": "Create a new product"
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/product",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"Lingerie\",\r\n\t\"slug\": \"lin1\",\r\n\t\"sku\": \"su005\",\r\n\t\"brand\": {\r\n\t\t\"id\": 2\r\n\t}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "154"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9a-n0ok2xdQ+7AMhvGPlRQ3650nzjg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Mar 2021 18:02:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Lingerie\",\n    \"slug\": \"lin1\",\n    \"sku\": \"su005\",\n    \"brand\": {\n        \"id\": 2\n    },\n    \"createdDate\": \"2021-03-08T18:02:26.663Z\",\n    \"modifiedDate\": \"2021-03-08T18:02:26.663Z\",\n    \"id\": 5\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"name\": \"Shirts\",\r\n    \"slug\": \"shi1-updated\",\r\n    \"sku\": \"su002\",\r\n    \"createdDate\": null,\r\n    \"modifiedDate\": \"2021-03-08T17:41:09.236Z\",\r\n    \"brand\": {\r\n        \"id\": 2,\r\n        \"name\": \"Adidas\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product"
+					]
+				},
+				"description": "Update a single product"
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/product",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"name\": \"Shirts\",\r\n    \"slug\": \"shi1-updated\",\r\n    \"sku\": \"su002\",\r\n    \"createdDate\": null,\r\n    \"modifiedDate\": \"2021-03-08T17:41:09.236Z\",\r\n    \"brand\": {\r\n        \"id\": 2,\r\n        \"name\": \"Adidas\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "154"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9a-jV6snGyZaZBQKNClhbRgxmxzSuI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Mar 2021 18:08:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"name\": \"Shirts\",\n    \"slug\": \"shi1-updated\",\n    \"sku\": \"su002\",\n    \"createdDate\": null,\n    \"modifiedDate\": \"2021-03-08T17:41:09.236Z\",\n    \"brand\": {\n        \"id\": 2,\n        \"name\": \"Adidas\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/product/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/product/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"3"
+					]
+				},
+				"description": "Delete a single product"
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/product/3",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/product/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "148"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"94-NUtIJvbfjmMCgI5ySs199HBf/Z0\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Mar 2021 18:11:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"raw\": {\n        \"fieldCount\": 0,\n        \"affectedRows\": 1,\n        \"insertId\": 0,\n        \"serverStatus\": 2,\n        \"warningCount\": 0,\n        \"message\": \"\",\n        \"protocol41\": true,\n        \"changedRows\": 0\n    },\n    \"affected\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/product/bulk",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/KasunG/Downloads/product.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/product/bulk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"bulk"
+					]
+				},
+				"description": "Create multiple products using a csv file"
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/product/bulk",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/KasunG/Downloads/product.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/product/bulk",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"bulk"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "214"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d6-EUzIkaZdRaRjUhm46dpIAb2/Uig\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Mar 2021 18:14:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 6,\n        \"name\": \"Socks\",\n        \"slug\": \"sok1\",\n        \"sku\": \"su006\",\n        \"createdDate\": null,\n        \"modifiedDate\": null,\n        \"brandId\": \"3\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Swimwear\",\n        \"slug\": \"swm1\",\n        \"sku\": \"su007\",\n        \"createdDate\": null,\n        \"modifiedDate\": null,\n        \"brandId\": \"2\"\n    }\n]"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
